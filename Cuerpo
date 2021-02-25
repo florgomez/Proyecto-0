@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <meta charset='UTF-8'/>
+        <link rel='stylesheet' href='styles.css'/>
+        <p><title>Titulo del diario</title></p>
+
+        <nav class="menu">
+            <ul> Lista de tematicas/secciones. Acá marcamos en negrita
+                (y en otro color) la que corresponda, es decir, la actual
+                donde estamos ahora.
+              <li><a href="#">Inicio</a></li>
+              <li><a href="#">Sobre nosotros</a></li>
+              <li><a href="#">Contacto</a></li>
+            </ul>
+          </nav>
+    </head>
+    <main>
+        <article>
+            <section>
+                <h1>Titulo de la noticia</h1>
+            </section>
+            <figure>
+                 <img  Imagen relacionada a la noticia. Debe tener 
+                    los atributos src y alt!>
+                 <figcaption></figcaption>
+             </figure>
+             <section>
+                 <p>Texto con el contenido de la noticia. Debe tener links 
+                     (absolutos o relativos) en alguna parte del texto para leer 
+                     más sobre algún tema.</p>
+             </section>
+        </article>
+        <aside>
+            <img  Imagen de publicidad/spam, preferentemente relacionada al 
+            contenido de la noticia.>
+        </aside>
+    </main>
+    <footer>
+        <p>Texto de Copyright.</p>
+        <a>Link absoluto hacia algún sitio externo.</a>
+        <a>Link que nos lleve hacia el header del diario 
+            (usar id=header para identificarlo).</a>
+
+    </footer>
+</html>
