@@ -1,0 +1,14 @@
+* {
+    color:#414141;
+    background-color: floralwhite;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+ }
+ nav {
+    text-decoration: none
+ }
+img {
+    width:420px;
+ }
+ ul{
+    list-style-type: none
+ }
