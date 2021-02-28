@@ -3,12 +3,17 @@
     background-color: floralwhite;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
  }
- nav {
+nav {
     text-decoration: none
  }
-img {
+/* img  
     width:420px;
- }
- ul{
+ } */
+ul{
     list-style-type: none
  }
+
+.smaller-image {
+   width: 520px;
+
+}
