@@ -1,19 +1,23 @@
 * {
-    color:#414141;
-    background-color: floralwhite;
+    color:#24292e;
+    background-color: #fafafa;
+    font-size: 18px;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
  }
-nav {
-    text-decoration: none
- }
-/* img  
-    width:420px;
- } */
-ul{
-    list-style-type: none
- }
+h1 {
+   font-size: 2.25em;
+}
+h2 {
+   font-size: 1.75em;
+}
+h3 {
+   font-size: 1.4em;
+}
 
-.smaller-image {
-   width: 520px;
 
+/*Pendiente:*/
+/* falta que las lista quede horizontal*/
+.nav {
+   text-decoration: none;      /*deberia sacar el formato por defoult de los links*/
+   list-style-type: none;      /* saca los iconos por default de la ul*/
 }
