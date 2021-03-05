@@ -1,11 +1,66 @@
-* {
-    color:#24292e;
-    background-color: #fafafa;
-    font-size: 18px;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+body {
+   color:#24292e;
+   background-color: #fafafa;
+   font-size: 18px;
+   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   width: 1080px;
+   margin: 0 auto;
+}
+a {
+   text-decoration: none;       /* esto saca el subrayado por defaoult de los links*/
+   color: #24292e;
+}
+
+header >p:first-child {           /* para el titulo del diario MENEM LO HIZO en top*/
+   text-align: center;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   font-size: 2.5em;
+   font-weight: bold;
+   color: #24292e; 
+}
+li { 
+   float: left;
+   list-style-type: none;    /* saca los iconos por defapult de la ul*/
+   font-size: 0.85em;
+}
+li:last-child {      /* queda igual si pongo ul >li:last-child */
+   font-weight: bold;
+   /* color:blueviolet; esto por alguna razon no funka */
+}
+
+li:link {         /*esto lo puse para ver si lograba acomodar lo del link pero no, pero igual por ahi sirve*/
+   color: #265301;
  }
+ li:visited {
+   color: #437A16;
+ }
+ li:focus {
+   border-bottom: 1px solid;
+   background: #BAE498;
+ }
+ li:hover {
+   border-bottom: 1px solid;
+   background: gainsboro;
+ }
+ li:active {
+   background: #265301;
+   color: #CDFEAA;
+ }
+
+ .nav:last-child {
+    color:green;
+ }
+
+
+
+
+
+
+
 h1 {
-   font-size: 2.25em;
+   font-size: 2em;
+   margin-top: 120px;
+   text-align: center;
 }
 h2 {
    font-size: 1.75em;
@@ -14,10 +69,26 @@ h3 {
    font-size: 1.4em;
 }
 
+article >p:first-child{         /*esto seria para cambiar formato de la fecha/hora pero no funko*/
+   margin-bottom: 30px;
+   color:#808080;
+   font-size: 0.75em;
+}s
+article >p:last-child{         /*esto seria para cambiar formato 'por Orne m - Flor G' pero no funko */
+   margin-top: 25px;
+}
 
-/*Pendiente:*/
-/* falta que las lista quede horizontal*/
-.nav {
-   text-decoration: none;      /*deberia sacar el formato por defoult de los links*/
-   list-style-type: none;      /* saca los iconos por default de la ul*/
+.img:last-child{
+   width: 1000px;
+}
+
+hr {      /* terminado */
+   margin-top: 45px;
+   border: .5px solid #808080;
+   width: 80%;
+   opacity: 0.3;
+}
+
+footer >p:nth-child(0n+3) { /*terminado */
+   text-align: center;
 }
