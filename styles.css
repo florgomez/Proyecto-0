@@ -4,11 +4,18 @@ body {
    font-size: 18px;
    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
    width: 1080px;
+   box-sizing: border-box;
+   border: 0;
+   padding: 0;
    margin: 0 auto;
 }
+
 a {
    text-decoration: none;       /* esto saca el subrayado por defaoult de los links*/
-   color: #24292e;
+}
+
+.green-background {
+   background-color: #8ee19b;
 }
 
 header >p:first-child {           /* para el titulo del diario MENEM LO HIZO en top*/
@@ -16,19 +23,30 @@ header >p:first-child {           /* para el titulo del diario MENEM LO HIZO en 
    font-family: Verdana, Geneva, Tahoma, sans-serif;
    font-size: 2.5em;
    font-weight: bold;
-   color: #24292e; 
+   color: #fafafa; 
 }
-li { 
+
+ul {
+   margin: 0;
+   border-right: 6px solid red;
+}
+
+li {  
    float: left;
    list-style-type: none;    /* saca los iconos por defapult de la ul*/
    font-size: 0.85em;
+   height: fit-content;
+   background-color: #8ee19b;
+   color: #fafafa;
 }
-li:last-child {      /* queda igual si pongo ul >li:last-child */
+.text-color {
+   color: #fafafa;
+}
+.violet {
+   color: #3c964a;
    font-weight: bold;
-   /* color:blueviolet; esto por alguna razon no funka */
 }
-
-li:link {         /*esto lo puse para ver si lograba acomodar lo del link pero no, pero igual por ahi sirve*/
+/*li:link {         esto lo puse para ver si lograba acomodar lo del link pero no, pero igual por ahi sirve
    color: #265301;
  }
  li:visited {
@@ -46,21 +64,20 @@ li:link {         /*esto lo puse para ver si lograba acomodar lo del link pero n
    background: #265301;
    color: #CDFEAA;
  }
-
- .nav:last-child {
-    color:green;
- }
-
-
-
-
-
-
+*/
 
 h1 {
    font-size: 2em;
-   margin-top: 120px;
+   margin-top: 100px;
    text-align: center;
+}
+.smaller-image {
+   width: 420px;
+}
+
+.larger-image {
+   width: 990px;
+   margin:unset;
 }
 h2 {
    font-size: 1.75em;
@@ -68,18 +85,20 @@ h2 {
 h3 {
    font-size: 1.4em;
 }
-
-article >p:first-child{         /*esto seria para cambiar formato de la fecha/hora pero no funko*/
-   margin-bottom: 30px;
-   color:#808080;
-   font-size: 0.75em;
-}s
-article >p:last-child{         /*esto seria para cambiar formato 'por Orne m - Flor G' pero no funko */
-   margin-top: 25px;
+.publicidad {
+   font-size: 0.5em;
+   margin-top: 60px;
+   margin-bottom: 15px;
 }
 
-.img:last-child{
-   width: 1000px;
+.fecha {         /*esto seria para cambiar formato de la fecha/hora*/
+   margin-bottom: 30px;
+   margin-top: 30px;
+   color:#808080;
+   font-size: 0.75em;
+}
+.por {         /*esto seria para cambiar formato 'por Orne m - Flor G' */
+   margin-top: 25px;
 }
 
 hr {      /* terminado */
@@ -92,3 +111,4 @@ hr {      /* terminado */
 footer >p:nth-child(0n+3) { /*terminado */
    text-align: center;
 }
+
