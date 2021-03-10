@@ -20,7 +20,7 @@ header {
 }
 .green-background {
    background: rgb(252,254,252);
-   background: linear-gradient(0deg, rgba(252,254,252,1) 3%, rgba(255,255,255,1) 10%, rgba(142,225,155,1) 82%);
+   background: linear-gradient(0deg, rgba(250,250,250,1) 12%, rgba(142,225,155,1) 96%);
 }
 header >p:first-child {           /* para el titulo del diario MENEM LO HIZO en top*/
    text-align: center;
@@ -95,7 +95,7 @@ h3 {
 
 footer {
    background: rgb(142,225,155);
-   background: linear-gradient(0deg, rgba(142,225,155,1) 12%, rgba(255,255,255,1) 79%, rgba(252,254,252,1) 96%);
+   background: linear-gradient(0deg, rgba(142,225,155,1) 12%, rgba(250,250,250,1) 96%);
    padding-bottom: 30px;
    padding-left: 15px;
 }
