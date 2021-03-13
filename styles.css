@@ -14,10 +14,11 @@ a {
    text-decoration: none;       /* esto saca el subrayado por defaoult de los links*/
    color: #3c964a;
 }
-header {
-   width:100%;
-   align-content:center;
-}
+a:hover {
+   border-bottom: 1px solid;
+   text-decoration: underline;
+ }
+
 .green-background {
    background: rgb(252,254,252);
    background: linear-gradient(0deg, rgba(250,250,250,1) 12%, rgba(142,225,155,1) 96%);
@@ -38,11 +39,9 @@ ul {
    padding: 40px;
 }
 li {  
-   float: left;
+   float: left;      /*esto hace que la ul quede en horizontal */
    list-style-type: none;    /* saca los iconos por defapult de la ul*/
    font-size: 0.85em;
-   height: fit-content;
-   margin: 0 auto;
    padding: 5px;
    border-left: 0.5px solid #8ee19b;
 }
@@ -54,34 +53,33 @@ li {
    font-weight: bold;
 }
 
-a:hover {
-   border-bottom: 1px solid;
-   text-decoration: underline;
- }
-
 h1 {
    font-size: 2em;
    margin-top: 20px;
    text-align: center;
 }
 .smaller-image {
-   width: 420px;
+   width: 520px;
 }
 .larger-image {
    width: 990px;
-   margin:unset;
+   margin:auto;
 }
 h2 {
-   font-size: 1.75em;
+   font-size: 1.25em;
+   margin:0;
+   text-transform:uppercase; 
 }
+.tamaño-titulos {
+   font-size: 18px;
+}
+
 h3 {
    font-size: 1.4em;
+   margin-bottom: 5px;
+   margin-top: 5px;
 }
-.publicidad {
-   font-size: 0.5em;
-   margin-top: 60px;
-   margin-bottom: 15px;
-}
+
 
 .fecha {         /*esto seria para cambiar formato de la fecha/hora*/
    margin-bottom: 30px;
@@ -91,6 +89,25 @@ h3 {
 }
 .por {         /*esto seria para cambiar formato 'por Orne m - Flor G' */
    margin-top: 25px;
+   margin-bottom: 40px;
+}
+
+.left {
+   float:left;
+   width: 48%;
+   padding: 10px;
+}
+
+.right {
+   float:right;
+   width: 48%;
+   padding: 10px;
+}
+
+.publicidad {
+   font-size: 0.5em;
+   margin-top: 415px;
+   margin-bottom: 15px;
 }
 
 footer {
@@ -105,6 +122,6 @@ hr {      /* terminado */
    width: 80%;
    opacity: 0.3;
 }
-footer >p:nth-child(0n+3) { /*terminado */
+footer >p:nth-child(0n+3) {         /*para centrar donde dice copyright*/
    text-align: center;
 }
